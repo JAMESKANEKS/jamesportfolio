@@ -1,0 +1,32 @@
+.home {
+    padding-top: 8rem;
+}
+.container-project {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-project img {
+    width: 25rem;
+}
+.project1 {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
+.project2 {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.project2 p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.project2 img {
+    width: 20rem;
+    height: 10rem;
+}

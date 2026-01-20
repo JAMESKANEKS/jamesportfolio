@@ -1,0 +1,9 @@
+.cert-section {
+    padding: 10rem 0;
+    flex-wrap: wrap;
+}
+.cert-section img {
+    margin-top: 100px;
+    width: 400px;
+    height: 300px;
+}
