@@ -61,19 +61,23 @@ section {
 }
 #home {
   background: #f5f7fa;
+  width: 100%;
 }
 
 #about {
   background: #00221f;
+  width: 100%;
 }
 
 #educational {
   background: #f0f0f0;
+  width: 100%;
 }
 
 #skills {
   background: #000000;
   color: white;
+  width: 100%;
 }
 
 /* ABOUT */
