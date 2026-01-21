@@ -7,7 +7,7 @@ import rental from "../assets/images/north8.png";
 export default function Educational() {
   return (
     <section className="home">
-      <h1>My Projects and Certificate</h1>
+      <h1>My Projects</h1>
       <div className="container-project">
         <p style={{ marginRight: "20px"}}><strong>Our Capstone Project</strong></p>
         <div className="project1">
