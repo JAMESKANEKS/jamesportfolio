@@ -45,6 +45,7 @@ section {
   border: none;
   background-color: transparent;
   color: black;
+  width: 100%;
 }
 .home .container .info .bots a img{
   width: 20px;
@@ -124,7 +125,7 @@ section {
   opacity: 1;
 }
 .card1 .html{
-  transform: translateX(-130px);
+  transform: translateX(-100px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 0.5s;
   opacity: 0;

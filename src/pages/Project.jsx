@@ -14,6 +14,7 @@ export default function Educational() {
           <div className="p1c">
             <img src={memoria} alt="Memoria Project" />
           <p>Memoria - A Digital Web based YearBook platform</p>
+          <a href="https://memoria-iyf7.onrender.com/">View This Project</a>
           </div>
         </div>
        
@@ -22,15 +23,18 @@ export default function Educational() {
           <div className="p1">
             <img src={rental} alt="Rental Project" />
             <p>Rental Website - Blog Website Business</p>
+            <a href="https://north8cebu.com/">View This Project</a>
           </div>
           
           <div className="p2">
             <img src={diagnostic} alt="Diagnostic Project" />
             <p>Diagnostic System - Pos with Service Management</p>
+            <a href="https://toledo-doctors.vercel.app/login">View This Project</a>
           </div>
           <div className="p3">
             <img src={paint} alt="Paint Project" />
           <p>Paint Inventory - Pos with Inventory Management</p>
+          <a href="https://boypaintinventory.vercel.app/login">View This Project</a>
         </div>
         </div>  
       </div>

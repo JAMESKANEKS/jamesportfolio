@@ -125,9 +125,9 @@ export default function Navbar() {
 
         <div className="social">
           <a href="https://www.facebook.com/jarancisf.rodriguez/" aria-label="Facebook"><img src={logo} alt="facebook" /></a>
-          <a href="#" aria-label="Instagram"><img src={insta} alt="instagram" /></a>
+          <a href="https://www.instagram.com/kanekiroshiguez/" aria-label="Instagram"><img src={insta} alt="instagram" /></a>
           <a href="https://github.com/JAMESKANEKS" aria-label="GitHub"><img src={github} alt="github" /></a>
-          <a href="#" aria-label="LinkedIn"><img src={linkedin} alt="linkedin" /></a>
+          <a href="https://www.linkedin.com/in/jamesf-rodriguez/" aria-label="LinkedIn"><img src={linkedin} alt="linkedin" /></a>
         </div>
       </div>
     </nav>

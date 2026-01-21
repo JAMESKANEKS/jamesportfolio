@@ -39,7 +39,7 @@ useEffect(() => {
   return (
     <>
       <section id="home" className="home">
-        <div className="container" style={{ textAlign: "center"}}>
+        <div className="container" >
             <div className="info">
             <h1>Web & App <span>Developer </span></h1>
             <p>I am a web and app developer who builds functional, responsive, and modern digital solutions.<br></br>focusing on creating websites and applications that are easy to use, efficient, and tailored to client needs.</p>
