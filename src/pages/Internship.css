@@ -15,6 +15,7 @@ section p {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .images img {
     width: 400px;
