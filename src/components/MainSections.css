@@ -215,7 +215,7 @@ section {
 .frameworks .card2 {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   margin: 30px auto 0;
   flex-wrap: wrap;
   width: 100%;
