@@ -16,7 +16,11 @@ section {
 .container {
   flex-wrap: wrap;
 }
-
+.profile img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
 .home h1 span {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.815);
@@ -38,7 +42,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px;
   margin: 50px auto 0;
   padding: 0 20px;
   width: 100%;
