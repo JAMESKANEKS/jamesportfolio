@@ -12,6 +12,9 @@ import ctu from "../assets/images/ctu.png";
 import tnvs from "../assets/images/tnvs.png";
 import matabang from "../assets/images/matabang.jpg";
 import cctc from "../assets/images/cctc.png";
+import firebase from "../assets/images/firebase.png";
+import postresql from "../assets/images/postgresql.png";
+import mysql from "../assets/images/mysql.png";
 
 export default function MainSections() {
 
@@ -93,6 +96,23 @@ useEffect(() => {
     <div className="express">
       <img src={express} alt="" />
       <p>EXPRESS JS</p>
+    </div>
+    </div>
+  </div>
+  <div className="frameworks">
+    <h1>Database</h1>
+    <div className="card2">
+      <div className="react">
+      <img src={mysql} alt="" />
+      <p>MYSQL</p>
+    </div>
+    <div className="tailwind">
+      <img src={postresql} alt="" />
+      <p>POSTRESQL</p>
+    </div>
+    <div className="express">
+      <img src={firebase} alt="" />
+      <p>FIREBASE</p>
     </div>
     </div>
   </div>
