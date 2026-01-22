@@ -13,7 +13,7 @@ import tnvs from "../assets/images/tnvs.png";
 import matabang from "../assets/images/matabang.jpg";
 import cctc from "../assets/images/cctc.png";
 import firebase from "../assets/images/firebase.png";
-import postresql from "../assets/images/postgresql.png";
+import postresql from "../assets/images/Postgresql.png";
 import mysql from "../assets/images/mysql.png";
 
 export default function MainSections() {
