@@ -107,13 +107,11 @@ useEffect(() => {
           <div className="wrap1">
             <div className="cctc">
             <img src={cctc} alt="" />
-            <p>Consolatrix College of Toledo City 2021-2025</p>
-            <p className="line">Bachelor of Science in Information Technology</p>
+            <p>Consolatrix College of Toledo City 2021-2025 / Bachelor of Science in Information Technology</p>
           </div> 
             <div className="ctu">
             <img src={ctu} alt="" />
-            <p>Cebu Technological University 2020-2021</p>
-            <p className="line">Bachelor in Industrial Computer Technology</p>
+            <p>Cebu Technological University 2020-2021 / Bachelor in Industrial Computer Technology</p>
           </div> 
           </div>
           <div className="wrap2">

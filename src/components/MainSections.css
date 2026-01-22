@@ -2,37 +2,59 @@ section {
   height: fit-content;
   padding: 4rem 2rem;
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   flex-wrap: wrap;
 }
+
 .home h1 span {
   font-weight: 200;
   color: rgba(0, 0, 0, 0.815);
   font-size: 2rem;
 }
+
 .info h1 {
   margin-bottom: 20px;
   font-size: 3rem;
   letter-spacing: 0.1px;
 }
+
 .info .p2 {
   margin-top: 10px;
 }
+
 .home .container {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 100px;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+  width: 100%;
   transform: translateX(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 0.5s;
   opacity: 0;
 }
+
 .home .container.in-view {
   transform: translateX(0);
   opacity: 1;
+}
+
+.info {
+  text-align: left;
 }
 
 .home .container .info .bots button {
@@ -42,23 +64,27 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .home .container .info .bots a {
   border: none;
   background-color: transparent;
   color: black;
   width: 100%;
 }
+
 .home .container .info .bots a img{
   width: 20px;
   height: 20px;
   margin-right: 10px;
   padding-top: 5px;
 }
+
 .home .container .info .bots{
   display: flex;
   gap: 20px;
   margin-top: 30px;
 }
+
 #home {
   background: #f5f7fa;
   width: 100%;
@@ -77,24 +103,27 @@ section {
 #skills {
   background: #000000;
   color: white;
-  width: 100%;
+  width: 100%;  
 }
 
 /* ABOUT */
 .cards h1 {
   font-size: 1.2rem;
 }
+
 .cards .text-show {
   opacity: 0;
   transition: opacity 1s ease;
   transition-delay: 0.5s;
 }
+
 .cards .text-show.in-view {
   opacity: 1;
 }
+
 .about-section {
   color: white;
-  display: flex;
+  
   justify-content: center;
   gap: 50px;
   flex-wrap: wrap;
@@ -104,78 +133,104 @@ section {
 .about-section .text-about {
   margin-bottom: 20px;
 }
+
 .card1 {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 30px;
+  margin: 30px auto 0;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
+
 .card1 img {
   width: 100px;
   height: 100px;
 }
+
 .card1 p {
   margin-top: 20px;
 }
+
 .trans {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 20px;
   transform: translateY(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 0.5s;
   opacity: 0;
 }
+
 .trans.in-view {
   transform: translateY(0);
   opacity: 1;
 }
+
 .card1 .html{
   transform: translateX(-100px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 0.5s;
   opacity: 0;
 }
+
 .card1 .css{
   transform: translateX(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 1s;
   opacity: 0;
 }
+
 .card1 .javascript{
   transform: translateX(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 1.5s;
   opacity: 0;
 }
+
 .card1 .php{
   transform: translateX(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 2s;
   opacity: 0;
 }
+
 .card1 .html.in-view, .card1 .css.in-view, .card1 .javascript.in-view, .card1 .php.in-view {
   transform: translateX(0);
   opacity: 1;
 }
+
 .frameworks {
   margin-top: 50px;
 }
+
 .frameworks img {
   width: 120px;
   height: 100px;
 }
+
 .frameworks .card2 {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 20px;
+  margin: 30px auto 0;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
 }
+
 .express img {
   width: 250px;
 }
+
 .card2 {
   flex-wrap: wrap;
 }
+
 .card2 p {
   margin-top: 20px;
 }
