@@ -48,7 +48,7 @@ useEffect(() => {
             <p>I am a web and app developer who builds functional, responsive, and modern digital solutions.<br></br>focusing on creating websites and applications that are easy to use, efficient, and tailored to client needs.</p>
             <p className="p2"><strong>Developer</strong> based in Cebu City Philippines</p>
             <div className="bots">
-               <a href="Project"><button>View my Projects</button></a>
+               <a href="Project"><button>View My Projects</button></a>
             </div>
         </div>
         <div className="profile">
