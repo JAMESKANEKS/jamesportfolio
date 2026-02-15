@@ -1,9 +1,221 @@
+/* Certifications Section Styling */
 .cert-section {
-    padding: 10rem 0;
-    flex-wrap: wrap;
+  padding: 6rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  min-height: 100vh;
 }
-.cert-section img {
-    margin-top: 100px;
-    width: 400px;
-    height: 300px;
+
+/* Header Styling */
+.cert-header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
+
+.cert-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.cert-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Container Styling */
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Certification Cards Styling */
+.cert-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #cbd5e1;
+}
+
+/* Image Container and Overlay */
+.cert-image-container {
+  position: relative;
+  overflow: hidden;
+  background: #f8fafc;
+  height: 250px;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cert-card:hover .cert-image {
+  transform: scale(1.05);
+}
+
+.cert-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.cert-category {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Certification Content */
+.cert-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.cert-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cert-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+  flex: 1;
+}
+
+/* View Certificate Button */
+.cert-view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+  background: none;
+  border: 2px solid #10b981;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  align-self: flex-start;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cert-view-btn:hover {
+  background: #10b981;
+  color: white;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-icon {
+  transition: transform 0.2s ease;
+}
+
+.cert-view-btn:hover .btn-icon {
+  transform: translateX(2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cert-section {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .cert-title {
+    font-size: 2.5rem;
+  }
+
+  .cert-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cert-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cert-image-container {
+    height: 200px;
+  }
+
+  .cert-content {
+    padding: 1rem;
+  }
+
+  .cert-name {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cert-title {
+    font-size: 2rem;
+  }
+
+  .cert-content {
+    padding: 0.75rem;
+  }
+
+  .cert-view-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cert-card {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.cert-card:nth-child(1) { animation-delay: 0.1s; }
+.cert-card:nth-child(2) { animation-delay: 0.2s; }
+.cert-card:nth-child(3) { animation-delay: 0.3s; }
+.cert-card:nth-child(4) { animation-delay: 0.4s; }
