@@ -38,6 +38,7 @@ export default function Educational() {
 
   return (
     <section className='cert-section'>
+      <div className="spacer"></div>
       <div className='cert-header'>
         <h1 className='cert-title'>My Certifications</h1>
         <p className='cert-subtitle'>Professional certifications that validate my skills and expertise</p>

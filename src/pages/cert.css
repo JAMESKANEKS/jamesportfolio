@@ -197,6 +197,11 @@
     font-size: 0.9rem;
   }
 }
+@media (max-width: 375px) {
+  .spacer{
+    height: 6vh;
+  }
+}
 
 /* Animation for page load */
 @keyframes fadeInUp {

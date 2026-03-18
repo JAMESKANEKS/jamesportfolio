@@ -248,6 +248,17 @@ section#home {
     font-size: 1rem;
   }
 }
+@media (max-width: 375px) {
+  .spacer {
+    height: 6vh;
+  }
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+}
 
 /* ABOUT */
 .cards h1 {
@@ -883,6 +894,16 @@ section#home {
 .skill-progress-bar.pink {
   background: linear-gradient(135deg, #ec4899, #db2777);
 }
+@media (max-width: 1250px) {
+  .skills-container {
+    max-width: 50rem;
+  }
+}
+@media (max-width: 800px) {
+  .skills-container {
+    max-width: 40rem;
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -910,6 +931,9 @@ section#home {
     min-width: 250px;
     max-width: 280px;
     padding: 20px;
+  }
+  .skills-container {
+    max-width: 28rem;
   }
 }
 
@@ -940,5 +964,13 @@ section#home {
   
   .skill-description {
     font-size: 0.75rem;
+  }
+  .skills-container {
+    max-width: 22rem;
+  }
+}
+@media (max-width: 375px) {
+  .skills-container {
+    max-width: 20rem;
   }
 }

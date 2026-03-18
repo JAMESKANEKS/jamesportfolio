@@ -7,6 +7,7 @@ import rental from "../assets/images/north8.png";
 export default function Educational() {
   return (
     <section className="projects-section">
+      <div className="spacer"></div>
       <div className="projects-header">
         <h1 className="projects-title">My Projects</h1>
         <p className="projects-subtitle">A showcase of my recent work and client projects</p>

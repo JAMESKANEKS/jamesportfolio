@@ -6,6 +6,7 @@ import imgtwo from '../assets/images/img2.jpg';
 export default function Educational() {
   return (
     <section>
+      <div className="spacer"></div>
       <h1>Internship Details</h1>
       <img className="cebeco" src={cebeco} alt="Cebeco Internship" />
       <h3>Cebu III Electric Cooperative Inc.</h3>

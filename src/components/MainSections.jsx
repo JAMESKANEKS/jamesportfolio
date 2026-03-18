@@ -37,7 +37,38 @@ useEffect(() => {
 
     boxes.forEach(box => observer.observe(box));
 
-    return () => observer.disconnect();
+    // iOS video autoplay fix
+    const video = document.querySelector('video');
+    if (video) {
+      // Attempt to play video programmatically for iOS
+      const playVideo = () => {
+        video.play().catch(error => {
+          console.log('Autoplay prevented:', error);
+        });
+      };
+
+      // Try to play immediately
+      playVideo();
+
+      // Also try on user interaction
+      const handleUserInteraction = () => {
+        playVideo();
+        document.removeEventListener('click', handleUserInteraction);
+        document.removeEventListener('touchstart', handleUserInteraction);
+      };
+
+      document.addEventListener('click', handleUserInteraction);
+      document.addEventListener('touchstart', handleUserInteraction);
+    }
+
+    return () => {
+      observer.disconnect();
+      const video = document.querySelector('video');
+      if (video) {
+        document.removeEventListener('click', handleUserInteraction);
+        document.removeEventListener('touchstart', handleUserInteraction);
+      }
+    };
   }, []);
 
   const containerVariants = {
@@ -90,6 +121,7 @@ useEffect(() => {
   return (
     <>
       <section id="home" className="home">
+        <div className="spacer"></div>
         <div style={{ 
           position: "relative", 
           width: "100%", 
@@ -104,6 +136,8 @@ useEffect(() => {
             autoPlay 
             loop 
             muted 
+            playsInline
+            preload="auto"
             style={{ 
               position: "absolute", 
               top: "50%",

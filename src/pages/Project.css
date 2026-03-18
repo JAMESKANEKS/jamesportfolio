@@ -278,6 +278,9 @@
   .category-title {
     font-size: 1.5rem;
   }
+  .spacer {
+    height: 6vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -291,6 +294,14 @@
 
   .project-content {
     padding: 0.75rem;
+  }
+  .spacer {
+    height: 6vh;
+  }
+}
+@media (max-width: 375px) {
+  .spacer {
+    height: 6vh;
   }
 }
 

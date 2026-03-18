@@ -1,6 +1,9 @@
+import "../pages/reflection.css";
+
 export default function Educational() {
   return (
     <section>
+      <div className="spacer"></div>
       <h1 style={{ marginBottom: "20px"}}>Reflection and Learning Journey</h1>
       <p>My journey in Information Technology has been a meaningful process of growth, discovery, and continuous learning. From my first year up to my fourth year of study, I gradually developed not only my technical skills but also my discipline, patience, and problem-solving mindset.
 

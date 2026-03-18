@@ -1,6 +1,9 @@
+import "../pages/declaration.css";
+
 export default function Educational() {
   return (
     <section>
+      <div className="spacer"></div>
       <h1 style={{ marginBottom: "20px"}}>Declaration and Ethics</h1>
       <p>I hereby declare that all the information and projects presented in this portfolio are true, original, and created by me to the best of my knowledge and ability. Any references, sources, or collaborative works have been properly acknowledged.
 
