@@ -170,7 +170,7 @@ export default function Navbar() {
 
               <div className={`dropdown-menu ${open ? 'open' : ''}`}>
                 {[
-                  { to: "/project", label: "Projects & Trainings" },
+                  { to: "/project", label: "My Projects" },
                   { to: "/internship", label: "OJT / Internship" },
                   { to: "/certification", label: "Certifications & Trainings" },
                   { to: "/reflection", label: "Reflection / Learning Journey" },

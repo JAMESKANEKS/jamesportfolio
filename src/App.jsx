@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import MainSections from "./components/MainSections";
 
 import Project from "./pages/Project";
@@ -26,6 +27,8 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/declaration" element={<Declaration />} />
       </Routes>
+      
+      <Footer />
     </BrowserRouter>
   );
 }

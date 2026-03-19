@@ -43,6 +43,230 @@ section#home {
 #educational {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   color: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+.educational-section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.educational-background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+  z-index: 0;
+}
+
+.educational-decoration {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.educational-header {
+  text-align: center;
+  margin-bottom: 64px;
+  position: relative;
+  z-index: 10;
+}
+
+.educational-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: #1e293b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.educational-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  max-width: 42rem;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card3 {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.educational-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.educational-cards-container:last-child {
+  margin-bottom: 0;
+}
+
+.education-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95));
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+.card-image-container {
+  position: relative;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+}
+
+.card-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: white;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 32px 24px 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+  z-index: 10;
+}
+
+.card-badge.transferred {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.3);
+}
+
+.card-badge.graduate {
+  background: rgb(9, 9, 102);
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.4;
+}
+
+.card-period {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card-details {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail-item {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1));
+  color: #1e293b;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(99, 102, 241, 0.15));
+  transform: translateY(-2px);
+}
+
+/* Special styling for different school cards */
+.cctc {
+  border-left: 4px solid #3b82f6;
+}
+
+.ctu {
+  border-left: 4px solid #f59e0b;
+}
+
+.matabang {
+  border-left: 4px solid #10b981;
+}
+
+.tnvs {
+  border-left: 4px solid #8b5cf6;
 }
 
 #skills {
@@ -106,7 +330,7 @@ section#home {
 
 .info h1 {
   margin-bottom: 24px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: -0.02em;
   line-height: 1.1;
   font-weight: 800;
@@ -275,6 +499,13 @@ section#home {
   opacity: 1;
 }
 
+.cards {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .about-section {
   color: white;
   
@@ -290,12 +521,12 @@ section#home {
 
 .card1 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   justify-content: center;
   margin: 40px auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 0 20px;
   position: relative;
 }
@@ -379,7 +610,7 @@ section#home {
 
 .card2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   justify-content: center;
   margin: 40px auto;
@@ -480,13 +711,14 @@ section#home {
 
 .trans {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
   transform: translateY(-150px);
   transition: transform 1s ease, opacity 1s ease;
   transition-delay: 0.5s;
   opacity: 0;
+  text-align: center;
 }
 
 .trans.in-view {
@@ -585,7 +817,7 @@ section#home {
 .cctc .text-gray-600, .ctu .text-gray-600, .matabang .text-gray-600, .tnvs .text-gray-600 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #3b82f6;
+  color: #1e293b;
   margin-bottom: 8px;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -597,46 +829,109 @@ section#home {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .educational-section {
     padding: 60px 16px;
   }
   
-  .card3 .wrap1, .card3 .wrap2 {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .educational-title {
+    font-size: 3rem;
   }
   
-  .cctc, .ctu, .matabang, .tnvs {
-    padding: 24px;
+  .educational-subtitle {
+    font-size: 1.125rem;
   }
   
-  .card3 img {
-    height: 100px;
+  .educational-cards-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .education-card {
+    min-width: 280px;
+    max-width: 100%;
+  }
+  
+  .card-image {
     width: 100px;
+    height: 100px;
   }
   
-  .cctc h3, .ctu h3, .matabang h3, .tnvs h3 {
-    font-size: 1.1rem;
+  .card-content {
+    padding: 24px 20px 20px;
+  }
+  
+  .card-title {
+    font-size: 1.125rem;
+  }
+  
+  .card-description {
+    font-size: 0.85rem;
+  }
+  
+  .detail-item {
+    font-size: 0.75rem;
+    padding: 4px 8px;
   }
 }
 
 @media (max-width: 480px) {
-  .card3 .wrap1, .card3 .wrap2 {
+  .educational-section {
+    padding: 40px 12px;
+  }
+  
+  .educational-title {
+    font-size: 2.5rem;
+  }
+  
+  .educational-header {
+    margin-bottom: 48px;
+  }
+  
+  .educational-cards-container {
     gap: 20px;
   }
   
-  .cctc, .ctu, .matabang, .tnvs {
+  .education-card {
+    min-width: 260px;
+  }
+  
+  .card-image-container {
     padding: 20px;
+    min-height: 140px;
   }
   
-  .card3 img {
-    height: 80px;
+  .card-image {
     width: 80px;
+    height: 80px;
   }
   
-  .cctc h3, .ctu h3, .matabang h3, .tnvs h3 {
+  .card-content {
+    padding: 20px 16px 16px;
+  }
+  
+  .card-title {
     font-size: 1rem;
+  }
+  
+  .card-period {
+    font-size: 0.875rem;
+  }
+  
+  .card-description {
+    font-size: 0.8rem;
+  }
+  
+  .card-badge {
+    font-size: 0.625rem;
+    padding: 4px 8px;
+  }
+  
+  .detail-item {
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
 }
 

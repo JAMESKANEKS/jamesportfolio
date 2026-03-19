@@ -39,6 +39,8 @@ useEffect(() => {
 
     // iOS video autoplay fix
     const video = document.querySelector('video');
+    let handleUserInteraction;
+    
     if (video) {
       // Attempt to play video programmatically for iOS
       const playVideo = () => {
@@ -51,7 +53,7 @@ useEffect(() => {
       playVideo();
 
       // Also try on user interaction
-      const handleUserInteraction = () => {
+      handleUserInteraction = () => {
         playVideo();
         document.removeEventListener('click', handleUserInteraction);
         document.removeEventListener('touchstart', handleUserInteraction);
@@ -63,8 +65,7 @@ useEffect(() => {
 
     return () => {
       observer.disconnect();
-      const video = document.querySelector('video');
-      if (video) {
+      if (video && handleUserInteraction) {
         document.removeEventListener('click', handleUserInteraction);
         document.removeEventListener('touchstart', handleUserInteraction);
       }
@@ -187,7 +188,7 @@ useEffect(() => {
               className="text-lg text-gray-600 mb-4 leading-relaxed max-w-2xl"
               variants={itemVariants}
             >
-              I am a web and app developer who builds functional, responsive, and modern digital solutions.
+              I am James Francis E. Rodriguez a web and app developer who builds functional, responsive, and modern digital solutions.
               <br />
               focusing on creating websites and applications that are easy to use, efficient, and tailored to client needs.
             </motion.p>
@@ -224,6 +225,7 @@ useEffect(() => {
               alt="Profile" 
               className="w-80 h-80 rounded-2xl shadow-2xl object-cover"
             />
+
           </motion.div>
         </motion.div>
       </div>
@@ -243,6 +245,7 @@ useEffect(() => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            style={{marginBottom: "30px"}}
           >
             About Me
           </motion.h1>
@@ -275,6 +278,7 @@ useEffect(() => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            style={{textAlign: "center", marginTop: "50px"}}
           >
             My Programming Languages
           </motion.h2>
@@ -326,6 +330,7 @@ useEffect(() => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              style={{textAlign: "center"}}
             >
               Frameworks
             </motion.h2>
@@ -374,6 +379,7 @@ useEffect(() => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              style={{textAlign: "center"}}
             >
               Database
             </motion.h2>
@@ -411,105 +417,152 @@ useEffect(() => {
         </motion.div>
       </section>
 
-      <section id="educational" className="bg-gray-50 py-16">
+      <section id="educational" className="educational-section">
+        <div className="educational-background"></div>
+        <div className="educational-decoration"></div>
+        
         <motion.div 
-          className="text-center mb-12"
+          className="educational-header"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Educational</h1>
-          <p className="text-lg text-gray-600">Education details</p>
+          <motion.h1 
+            className="educational-title"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            Educational Journey
+          </motion.h1>
+          <motion.p 
+            className="educational-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            My academic background and educational achievements
+          </motion.p>
         </motion.div>
 
         <motion.div 
-          className="card3 max-w-6xl mx-auto px-6"
+          className="card3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.div 
-            className="wrap1 grid grid-cols-1 md:grid-cols-2 gap-8 mb-8"
+            className="educational-cards-container"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div 
-              className="cctc bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
+              className="education-card cctc"
               variants={itemVariants}
-              whileHover={{ y: -5, scale: 1.02 }}
+              whileHover={{ y: -8, scale: 1.03 }}
             >
-              <img 
-                src={cctc} 
-                alt="Consolatrix College" 
-                className="w-32 h-32 mx-auto mb-6 object-contain"
-              />
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Consolatrix College of Toledo City</h3>
-                <p className="text-gray-600 font-medium">2022-2026</p>
-                <p className="text-gray-700 mt-2">Bachelor of Science in Information Technology</p>
+              <div className="card-image-container">
+                <img 
+                  src={cctc} 
+                  alt="Consolatrix College" 
+                  className="card-image"
+                />
+              </div>
+              <div className="card-content">
+                <div className="card-badge graduate">Graduate</div>
+                <h3 className="card-title">Consolatrix College of Toledo City</h3>
+                <p className="card-period">2022-2026</p>
+                <p className="card-description">Bachelor of Science in Information Technology</p>
+                <div className="card-details">
+                  <span className="detail-item">🎓 BSIT</span>
+                  <span className="detail-item">📍 Toledo City</span>
+                </div>
               </div>
             </motion.div>
             
             <motion.div 
-              className="ctu bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
+              className="education-card ctu"
               variants={itemVariants}
-              whileHover={{ y: -5, scale: 1.02 }}
+              whileHover={{ y: -8, scale: 1.03 }}
             >
-              <img 
-                src={ctu} 
-                alt="Cebu Technological University" 
-                className="w-32 h-32 mx-auto mb-6 object-contain"
-              />
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Cebu Technological University</h3>
-                <p className="text-gray-600 font-medium">2021-2022</p>
-                <p className="text-gray-700 mt-2">Bachelor in Industrial Computer Technology</p>
+              <div className="card-image-container">
+                <img 
+                  src={ctu} 
+                  alt="Cebu Technological University" 
+                  className="card-image"
+                />
+              </div>
+              <div className="card-content">
+                <div className="card-badge transferred">Transferred</div>
+                <h3 className="card-title">Cebu Technological University</h3>
+                <p className="card-period">2021-2022</p>
+                <p className="card-description">Bachelor in Industrial Computer Technology</p>
+                <div className="card-details">
+                  <span className="detail-item">🎓 BICT</span>
+                  <span className="detail-item">📍 Cebu City</span>
+                </div>
               </div>
             </motion.div>
           </motion.div>
           
           <motion.div 
-            className="wrap2 grid grid-cols-1 md:grid-cols-2 gap-8"
+            className="educational-cards-container"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
             <motion.div 
-              className="matabang bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
+              className="education-card tnvs"
               variants={itemVariants}
-              whileHover={{ y: -5, scale: 1.02 }}
+              whileHover={{ y: -8, scale: 1.03 }}
             >
-              <img 
-                src={matabang} 
-                alt="Matab-ang Elementary School" 
-                className="w-32 h-32 mx-auto mb-6 object-cover rounded-lg"
-              />
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Matab-ang Elementary School</h3>
-                <p className="text-gray-600 font-medium">2009-2015</p>
+              <div className="card-image-container">
+                <img 
+                  src={tnvs} 
+                  alt="Toledo National Vocational School" 
+                  className="card-image"
+                />
+              </div>
+              <div className="card-content">
+                <h3 className="card-title">Toledo National Vocational School</h3>
+                <p className="card-period">2015-2020</p>
+                <div className="card-details">
+                  <span className="detail-item">🎓 High School</span>
+                  <span className="detail-item">📍 Toledo City</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="education-card matabang"
+              variants={itemVariants}
+              whileHover={{ y: -8, scale: 1.03 }}
+            >
+              <div className="card-image-container">
+                <img 
+                  src={matabang} 
+                  alt="Matab-ang Elementary School" 
+                  className="card-image"
+                />
+              </div>
+              <div className="card-content">
+                <h3 className="card-title">Matab-ang Elementary School</h3>
+                <p className="card-period">2009-2015</p>
+                <div className="card-details">
+                  <span className="detail-item">🎓 Elementary</span>
+                  <span className="detail-item">📍 Toledo City</span>
+                </div>
               </div>
             </motion.div>
             
-            <motion.div 
-              className="tnvs bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300"
-              variants={itemVariants}
-              whileHover={{ y: -5, scale: 1.02 }}
-            >
-              <img 
-                src={tnvs} 
-                alt="Toledo National Vocational School" 
-                className="w-32 h-32 mx-auto mb-6 object-contain"
-              />
-              <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Toledo National Vocational School</h3>
-                <p className="text-gray-600 font-medium">2015-2020</p>
-              </div>
-            </motion.div>
+            
           </motion.div>
         </motion.div>
       </section>
