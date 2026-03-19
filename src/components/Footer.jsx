@@ -35,8 +35,7 @@ export default function Footer() {
             <div className="contact-info">
               <div className="contact-item">
                 <EnvelopeIcon className="contact-icon" />
-                <span>jamesfrancisrodriguezz
-                  @gmail.com</span>
+                <span>jamesfrancisrodriguezz@gmail.com</span>
               </div>
               <div className="contact-item">
                 <PhoneIcon className="contact-icon" />
