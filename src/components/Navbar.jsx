@@ -16,6 +16,12 @@ export default function Navbar() {
   const location = useLocation();
   const menuRef = useRef(null);
 
+  // ✅ SCROLL TO TOP ON PAGE NAVIGATION
+  useEffect(() => {
+    // Scroll to top when route changes
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   // ✅ HEADER SCROLL EFFECT
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
