@@ -4,6 +4,9 @@ import memoria from "../assets/images/memoria.png";
 import paint from "../assets/images/paint.png";
 import diagnostic from "../assets/images/diagnostic.png";
 import rental from "../assets/images/north8.png";
+import auditsystem from "../assets/images/auditsystem.png";
+import barcodescanner from "../assets/images/barcodescanner.png";
+import carrental from "../assets/images/carrentalwebsite.png";
 import { 
   FolderIcon,
   BuildingOfficeIcon,
@@ -519,6 +522,301 @@ export default function Educational() {
                   </motion.span>
                 </motion.div>
                 
+              </motion.div>
+            </motion.div>
+
+            <motion.div 
+              className="project-card"
+              variants={cardVariants}
+              whileHover="hover"
+            >
+              <motion.div 
+                className="project-image-container"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 1.6 }}
+              >
+                <motion.img 
+                  src={auditsystem} 
+                  alt="Audit System" 
+                  className="project-image"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.div 
+                  className="project-overlay"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 1.8 }}
+                >
+                  <motion.span 
+                    className="project-badge"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.0 }}
+                  >
+                    Client
+                  </motion.span>
+                </motion.div>
+              </motion.div>
+              <motion.div 
+                className="project-content"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 1.8 }}
+              >
+                <motion.h3 
+                  className="project-title"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.0 }}
+                >
+                  <motion.div
+                    className="project-icon-wrapper"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.2 }}
+                  >
+                    <FolderIcon className="project-icon" />
+                  </motion.div>
+                  Audit System Tool
+                </motion.h3>
+                <motion.p 
+                  className="project-description"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.2 }}
+                >
+                  Comprehensive audit management system with reporting and analytics
+                </motion.p>
+                <motion.div 
+                  className="project-tech"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.4 }}
+                >
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 2.6 }}
+                  >
+                    Management
+                  </motion.span>
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 2.8 }}
+                  >
+                    Analytics
+                  </motion.span>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+
+            <motion.div 
+              className="project-card"
+              variants={cardVariants}
+              whileHover="hover"
+            >
+              <motion.div 
+                className="project-image-container"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 1.8 }}
+              >
+                <motion.img 
+                  src={barcodescanner} 
+                  alt="Mobile Barcode Scanner" 
+                  className="project-image"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.div 
+                  className="project-overlay"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.0 }}
+                >
+                  <motion.span 
+                    className="project-badge"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.2 }}
+                  >
+                    Client
+                  </motion.span>
+                </motion.div>
+              </motion.div>
+              <motion.div 
+                className="project-content"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 2.0 }}
+              >
+                <motion.h3 
+                  className="project-title"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.2 }}
+                >
+                  <motion.div
+                    className="project-icon-wrapper"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.4 }}
+                  >
+                    <ArrowTopRightOnSquareIcon className="project-icon" />
+                  </motion.div>
+                  Mobile Barcode Scanner
+                </motion.h3>
+                <motion.p 
+                  className="project-description"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.4 }}
+                >
+                  Mobile application for barcode scanning and inventory tracking
+                </motion.p>
+                <motion.div 
+                  className="project-tech"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.6 }}
+                >
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 2.8 }}
+                  >
+                    Mobile
+                  </motion.span>
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 3.0 }}
+                  >
+                    Scanner
+                  </motion.span>
+                </motion.div>
+              </motion.div>
+            </motion.div>
+
+            <motion.div 
+              className="project-card"
+              variants={cardVariants}
+              whileHover="hover"
+            >
+              <motion.div 
+                className="project-image-container"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 2.0 }}
+              >
+                <motion.img 
+                  src={carrental} 
+                  alt="Car Rental Website" 
+                  className="project-image"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.div 
+                  className="project-overlay"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.2 }}
+                >
+                  <motion.span 
+                    className="project-badge"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.4 }}
+                  >
+                    Client
+                  </motion.span>
+                </motion.div>
+              </motion.div>
+              <motion.div 
+                className="project-content"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 2.2 }}
+              >
+                <motion.h3 
+                  className="project-title"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.4 }}
+                >
+                  <motion.div
+                    className="project-icon-wrapper"
+                    initial={{ scale: 0, rotate: -180 }}
+                    animate={{ scale: 1, rotate: 0 }}
+                    transition={{ duration: 0.6, delay: 2.6 }}
+                  >
+                    <BuildingOfficeIcon className="project-icon" />
+                  </motion.div>
+                  Car Rental Website
+                </motion.h3>
+                <motion.p 
+                  className="project-description"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.6 }}
+                >
+                  Online car rental platform with booking and management system
+                </motion.p>
+                <motion.div 
+                  className="project-tech"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 2.8 }}
+                >
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 3.0 }}
+                  >
+                    Rental
+                  </motion.span>
+                  <motion.span 
+                    className="tech-tag"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.4, delay: 3.2 }}
+                  >
+                    Booking
+                  </motion.span>
+                </motion.div>
+                <motion.a 
+                  href="https://fjautorental.vercel.app/" 
+                  className="project-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View Project
+                  <motion.svg 
+                    className="link-icon" 
+                    width="16" 
+                    height="16" 
+                    viewBox="0 0 24 24" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2"
+                    whileHover={{ x: 2 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15,3 21,3 21,9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </motion.svg>
+                </motion.a>
               </motion.div>
             </motion.div>
           </motion.div>
