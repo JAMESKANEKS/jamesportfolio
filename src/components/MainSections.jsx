@@ -182,7 +182,7 @@ useEffect(() => {
               className="text-5xl md:text-6xl font-bold text-gray-900 mb-6"
               variants={itemVariants}
             >
-              Web & App <span className="text-blue-600 font-light">Developer</span>
+              Web & Software <span className="text-blue-600 font-light">Developer</span>
             </motion.h1>
             <motion.p 
               className="text-lg text-gray-600 mb-4 leading-relaxed max-w-2xl"
