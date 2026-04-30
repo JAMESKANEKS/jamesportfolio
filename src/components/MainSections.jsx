@@ -188,9 +188,9 @@ useEffect(() => {
               className="text-lg text-gray-600 mb-4 leading-relaxed max-w-2xl"
               variants={itemVariants}
             >
-              I am James Francis E. Rodriguez a web and app developer who builds functional, responsive, and modern digital solutions.
+              I am James Francis E. Rodriguez a Web and Software developer who builds functional, responsive, and modern digital solutions.
               <br />
-              focusing on creating websites and applications that are easy to use, efficient, and tailored to client needs.
+              focusing on creating websites and software that are easy to use, efficient, and tailored to client needs.
             </motion.p>
             <motion.p 
               className="text-gray-700 font-medium mb-8"
