@@ -143,7 +143,7 @@ export default function Educational() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1.6 }}
               >
-                During my internship at Cebu III Electric Cooperative Inc., I had the opportunity to work on several projects that enhanced my technical skills and provided valuable industry experience.
+                Handled basic accounting duties such as cash distribution per department, encoding of payment receipts and maintaining financial records. Also assisted in document filing, data encoding, and record management to ensure accurate and organized office documents.
               </motion.p>
             </motion.div>
           </motion.div>

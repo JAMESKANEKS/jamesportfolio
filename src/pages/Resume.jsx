@@ -204,7 +204,7 @@ export default function Resume() {
                 Get a comprehensive overview of my experience, skills, and qualifications
               </p>
               <motion.a 
-                href="https://drive.google.com/file/d/16qoCKbSC1zExbcCC44rvym6n2X2OCyWW/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1Pu3sXzvgmVwfFGhCx1USWfOIAMBVo9eo/view?usp=sharing" 
                 download
                 className="download-button"
                 whileHover={{ scale: 1.05 }}

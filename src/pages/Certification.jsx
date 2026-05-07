@@ -4,6 +4,8 @@ import certone from '../assets/images/cert2.png';
 import learn from '../assets/images/csslearn.png';
 import certthree from '../assets/images/cert3.png';
 import certfour from '../assets/images/cert4.png';
+import certfive from '../assets/images/cert5.jpg';
+import certsix from '../assets/images/cert6.jpg';
 import { motion } from 'framer-motion';
 import { 
   TrophyIcon, 
@@ -99,6 +101,24 @@ export default function Educational() {
       description: "The bearer of this certificate has passed the HackerRank skill certification test",
       icon: "ShieldCheckIcon",
       details: "Validates expertise in specialized technical areas and industry best practices"
+    },
+    {
+      id: 6,
+      title: "Internship (OJT)",
+      image: certfive,
+      category: "OJT",
+      description: "Certificate of Completion",
+      icon: "ShieldCheckIcon",
+      details: "500 hours"
+    },
+    {
+      id: 7,
+      title: "Best in Capstone",
+      image: certsix,
+      category: "Capstone",
+      description: "Research Project called Memoria a digital web-based yearbook platform",
+      icon: "ShieldCheckIcon",
+      details: "CCTC"
     }
   ];
 

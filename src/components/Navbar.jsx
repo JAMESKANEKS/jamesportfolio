@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 import "./Navbar.css";
 import logo from "../assets/images/facebook (1).png";
-import insta from "../assets/images/instagram.png";
 import github from "../assets/images/github-sign.png";
 import linkedin from "../assets/images/linkedin.png";
 import logo1 from "../assets/images/logo.png";
@@ -208,7 +207,6 @@ export default function Navbar() {
           >
             {[
               { href: "https://www.facebook.com/jarancisf.rodriguez/", src: logo, alt: "facebook" },
-              { href: "https://www.instagram.com/kanekiroshiguez/", src: insta, alt: "instagram" },
               { href: "https://github.com/JAMESKANEKS", src: github, alt: "github" },
               { href: "https://www.linkedin.com/in/jamesf-rodriguez/", src: linkedin, alt: "linkedin" }
             ].map((social, index) => (
